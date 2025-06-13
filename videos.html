@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Vídeos</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <style>
+    .replay-btn {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #333;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 20px;
+      transition: background 0.3s;
+    }
+
+    .replay-btn:hover {
+      background-color: #555;
+    }
+  </style>
+  <body>
+    <header><h1>Meus Vídeos</h1></header>
+    <main class="videos">
+      <video controls width="320">
+        <source src="assets/videos/video1.mp4" type="video/mp4" />
+      </video>
+      <video controls width="320">
+        <source src="assets/videos/video2.mp4" type="video/mp4" />
+      </video>
+      <video controls width="320">
+        <source src="assets/videos/video3.mp4" type="video/mp4" />
+      </video>
+      <video controls width="320">
+        <source src="assets/videos/video4.mp4" type="video/mp4" />
+      </video>
+      <video controls width="320">
+        <source src="assets/videos/video5.mp4" type="video/mp4" />
+      </video>
+    </main>
+    <script>
+      window.addEventListener("DOMContentLoaded", () => {
+        const videos = document.querySelectorAll("video");
+        let current = 0;
+
+        // Garante que apenas o primeiro vídeo começa
+        videos.forEach((video, index) => {
+          video.pause();
+          video.currentTime = 0;
+          if (index !== 0) video.style.display = "none";
+        });
+
+        videos[current].play();
+
+        videos.forEach((video, index) => {
+          video.addEventListener("ended", () => {
+            video.style.display = "none"; // Esconde o vídeo que terminou
+            current++;
+            if (current < videos.length) {
+              videos[current].style.display = "inline-block";
+              videos[current].play();
+            } else {
+              const replay = document.createElement("button");
+              replay.textContent = "Assistir novamente";
+              replay.style.marginTop = "20px";
+              replay.onclick = () => location.reload();
+              document.body.appendChild(replay);
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

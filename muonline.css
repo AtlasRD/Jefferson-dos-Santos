@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0b0b0b;
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+header {
+  background-color: #111;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  border-bottom: 2px solid #d40000;
+}
+
+.logo {
+  font-size: 28px;
+  color: #d40000;
+  font-weight: bold;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-left: 30px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #d40000;
+}
+
+.banner {
+  background-image: url("https://i.imgur.com/1z0d5Vb.jpg"); /* Você pode trocar pela imagem do seu servidor */
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-content {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.banner-content h1 {
+  font-size: 48px;
+  margin-bottom: 15px;
+  color: #ffd700;
+}
+
+.banner-content p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background-color: #d40000;
+  color: white;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #a30000;
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px;
+  background-color: #111;
+}
+
+.card {
+  background-color: #1c1c1c;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #d40000;
+  width: 250px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card h2 {
+  color: #ffd700;
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: #0b0b0b;
+  text-align: center;
+  padding: 15px;
+  border-top: 2px solid #d40000;
+  font-size: 14px;
+}

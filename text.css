@@ -1,0 +1,58 @@
+* {
+  font-family: "Newsreader", serif;
+  font-style: normal;
+  box-sizing: border-box;
+}
+header {
+  header {
+    background-color: #111;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+
+    position: relative;
+  }
+
+  nav {
+    position: relative;
+    left: 77%;
+  }
+}
+.div-1 {
+  position: absolute;
+  top: 1%;
+}
+.div-um {
+  display: flex;
+}
+
+.div-a {
+  position: absolute;
+  left: 90%;
+  margin: auto;
+  padding: 9.5px 16px;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  color: #000;
+
+  font-feature-settings: "liga" off, "clig" off;
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 120%; /* 76.8px */
+  letter-spacing: -1.28px;
+}
+
+h2 {
+  position: absolute;
+  left: 12%;
+  top: 5%;
+  color: #000;
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 130%;
+}

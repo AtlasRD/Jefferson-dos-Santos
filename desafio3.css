@@ -1,0 +1,135 @@
+* {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  border: 0;
+}
+a {
+  margin-left: 42px;
+  margin-top: 47px;
+}
+.button-header {
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 1px;
+  font-size: 16px;
+  color: #ffffff;
+  border-radius: 6px;
+  border: 1px solid #4cb538;
+  background: #6fbf44;
+  width: 124px;
+  height: 51px;
+  flex-shrink: 0;
+  margin-left: 32px;
+  margin-top: 45px;
+  cursor: pointer;
+}
+.image {
+  display: inline-block;
+  margin: 194px 0 0 121px;
+}
+div {
+  display: inline-block;
+  margin-left: 85px;
+}
+h1 {
+  width: 582px;
+  color: #161a49;
+  font-size: 62px;
+  font-weight: 700;
+  line-height: 82px;
+  letter-spacing: 0.596px;
+}
+p {
+  color: #4b505a;
+  font-weight: 400;
+  line-height: 33px;
+  letter-spacing: 0.5px;
+  margin-top: 47px;
+  margin-bottom: 55px;
+  width: 493px;
+}
+.more {
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 1px;
+  font-size: 18px;
+  color: #6fbf44;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+a:nth-child(4) {
+  letter-spacing: 0.875px;
+}
+
+@media screen and (max-width: 750px) {
+  div {
+    position: absolute;
+    top: 20%;
+  }
+  a {
+    display: none;
+  }
+  .conteiner-un {
+    width: 100%;
+    height: 50%;
+    padding: 0;
+    margin: -7px;
+  }
+  .conteiner-dois {
+    display: block;
+    height: auto;
+    width: 100;
+    position: static;
+    padding: 40px;
+  }
+  .button-header {
+    border-radius: 6px;
+    border: 1px solid #4cb538;
+    background: #6fbf44;
+    width: 91px;
+    height: 31px;
+    flex-shrink: 0;
+    position: absolute;
+    right: 1%;
+  }
+  h1 {
+    font-weight: 700;
+    line-height: 30px; /* 100% */
+    letter-spacing: 0.596px;
+    font-size: 30px;
+    color: #161a49;
+    width: 278px;
+    text-align: center;
+  }
+  p {
+    width: 304px;
+    color: #4b505a;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 33px; /* 183.333% */
+    letter-spacing: 0.5px;
+    margin-right: 43px;
+  }
+  .more {
+    text-align: center;
+    color: #6fbf44;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1px;
+    font-size: 18px;
+    margin: 25%;
+    margin-top: 26px;
+    margin-bottom: 59px;
+  }
+  .image {
+    width: 279.921px;
+    height: 268.932px;
+    flex-shrink: 0;
+    position: absolute;
+    bottom: -3%;
+    margin: 60px;
+  }
+}
